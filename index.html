@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang=en>
+<head>
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name=description content="Merapi Observator">
+<meta name=author content="Muhammad Muhlas Abror">
+<title>Merapi Observator</title>
+<link href=dist/css/bootstrap.min.css rel=stylesheet>
+<link href=main.css rel=stylesheet>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-117502873-2"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date());gtag("config","UA-117502873-2");</script>
+</head>
+<body onload=initSite()>
+<header>
+<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+<a class=navbar-brand href=#>Merapi Observator</a>
+<button class=navbar-toggler type=button data-toggle=collapse data-target=#navbarCollapse aria-controls=navbarCollapse aria-expanded=false aria-label="Toggle navigation">
+<span class=navbar-toggler-icon></span>
+</button>
+<div class="collapse navbar-collapse" id=navbarCollapse>
+<ul class="navbar-nav mr-auto">
+<li class=nav-item>
+<a class=nav-link href=#observer-area-puncak>Area Puncak</a>
+</li>
+<li class=nav-item>
+<a class=nav-link href=#observer-area-kali>Area Kali</a>
+</li>
+<li class=nav-item>
+<a class=nav-link href=https://www.linkedin.com/in/muhammadmuhlas/>About Author <span class=sr-only>(current)</span></a>
+</li>
+</ul>
+</div>
+</nav>
+</header>
+<main role=main class=container-fluid>
+<h1 class="mt-5 text-center">Yogyakarta, <span id="time-now"/></h1>
+<p class="lead text-center">
+Observe Merapi in (nearly) realtime from different angle! Stay in this page, <strong>We are providing (nearly) realtime images for you!</strong> <br> <code><span id=countdown-reload></span></code>
+</p>
+<br>
+<div id=observer-area-puncak class="row text-center">
+<div class=col-md-12>
+<h3 class="text-center area-title">
+Observer Area Puncak
+</h3>
+</div>
+</div>
+<div class=row>
+<div class=col-md-4>
+<h4 class="text-center observer-title">Deles (Kel. Sidorejo)</h4>
+<img id=observer-content-1 src="http://merapi.bgl.esdm.go.id/viewer_images/view.php?id=81" alt width=100%>
+</div>
+<div class=col-md-4>
+<h4 class="text-center observer-title">Kaliurang (Museum)</h4>
+<img id=observer-content-2 src="http://merapi.bgl.esdm.go.id/viewer_images/view.php?id=68" alt width=100%>
+</div>
+<div class=col-md-4>
+<h4 class="text-center observer-title">Merbabu</h4>
+<img id=observer-content-3 src="http://merapi.bgl.esdm.go.id/viewer_images/view.php?id=79" alt width=100%>
+</div>
+<div class=col-md-4>
+<h4 class="text-center observer-title">Pasar Bubar</h4>
+<img id=observer-content-4 src="http://merapi.bgl.esdm.go.id/viewer_images/view.php?id=22" alt width=100%>
+</div>
+<div class=col-md-4>
+<h4 class="text-center observer-title">Plawangan</h4>
+<img id=observer-content-5 src="http://merapi.bgl.esdm.go.id/viewer_images/view.php?id=1" alt width=100%>
+</div>
+<div class=col-md-4>
+<h4 class="text-center observer-title">Pos Babadan</h4>
+<img id=observer-content-6 src="http://merapi.bgl.esdm.go.id/viewer_images/view.php?id=110" alt width=100%>
+</div>
+<div class=col-md-4>
+<h4 class="text-center observer-title">Pos Jrakah</h4>
+<img id=observer-content-7 src="http://merapi.bgl.esdm.go.id/viewer_images/view.php?id=109" alt width=100%>
+</div>
+<div class=col-md-4>
+<h4 class="text-center observer-title">Puncak Merapi</h4>
+<img id=observer-content-8 src="http://merapi.bgl.esdm.go.id/viewer_images/view.php?id=105" alt width=100%>
+</div>
+<div class=col-md-4>
+<h4 class="text-center observer-title">Selo</h4>
+<img id=observer-content-9 src="http://merapi.bgl.esdm.go.id/viewer_images/view.php?id=108" alt width=100%>
+</div>
+</div>
+<br>
+<div id=observer-area-kali class="row text-center">
+<div class=col-md-12>
+<h3 class="text-center area-title">
+Observer Area Kali
+</h3>
+</div>
+</div>
+<div class=row>
+<div class=col-md-4>
+<h4 class="text-center observer-title">Kali Batang (Bakalan)</h4>
+<img id=observer-content-10 src="http://merapi.bgl.esdm.go.id/viewer_images/view.php?id=78" alt width=100%>
+</div>
+<div class=col-md-4>
+<h4 class="text-center observer-title">Kali Bebeng (Nganggrung)</h4>
+<img id=observer-content-11 src="http://merapi.bgl.esdm.go.id/viewer_images/view.php?id=103" alt width=100%>
+</div>
+<div class=col-md-4>
+<h4 class="text-center observer-title">Kali Boyong (Kemiri)</h4>
+<img id=observer-content-12 src="http://merapi.bgl.esdm.go.id/viewer_images/view.php?id=73" alt width=100%>
+</div>
+<div class=col-md-4>
+<h4 class="text-center observer-title">Kali Boyong (Pulowatu)</h4>
+<img id=observer-content-13 src="http://merapi.bgl.esdm.go.id/viewer_images/view.php?id=80" alt width=100%>
+</div>
+<div class=col-md-4>
+<h4 class="text-center observer-title">Kali Gendol (Morangan)</h4>
+<img id=observer-content-14 src="http://merapi.bgl.esdm.go.id/viewer_images/view.php?id=75" alt width=100%>
+</div>
+<div class=col-md-4>
+<h4 class="text-center observer-title">Kali Gendol (Srunen)</h4>
+<img id=observer-content-15 src="http://merapi.bgl.esdm.go.id/viewer_images/view.php?id=104" alt width=100%>
+</div>
+<div class=col-md-4>
+<h4 class="text-center observer-title">Kali Krasak (SABO)</h4>
+<img id=observer-content-16 src="http://merapi.bgl.esdm.go.id/viewer_images/view.php?id=113" alt width=100%>
+</div>
+<div class=col-md-4>
+<h4 class="text-center observer-title">Kali Kuning (Purwomartani)</h4>
+<img id=observer-content-17 src="http://merapi.bgl.esdm.go.id/viewer_images/view.php?id=83" alt width=100%>
+</div>
+<div class=col-md-4>
+<h4 class="text-center observer-title">Kali Lamat (Dukun) Argomulyo</h4>
+<img id=observer-content-18 src="http://merapi.bgl.esdm.go.id/viewer_images/view.php?id=77" alt width=100%>
+</div>
+<div class=col-md-4>
+<h4 class="text-center observer-title">Kali Opak (Golf)</h4>
+<img id=observer-content-19 src="http://merapi.bgl.esdm.go.id/viewer_images/view.php?id=82" alt width=100%>
+</div>
+<div class=col-md-4>
+<h4 class="text-center observer-title">Kali Opak (Prambanan)</h4>
+<img id=observer-content-20 src="http://merapi.bgl.esdm.go.id/viewer_images/view.php?id=72" alt width=100%>
+</div>
+<div class=col-md-4>
+<h4 class="text-center observer-title">Kali Pabelan (SABO)</h4>
+<img id=observer-content-21 src="http://merapi.bgl.esdm.go.id/viewer_images/view.php?id=101" alt width=100%>
+</div>
+<div class=col-md-4>
+<h4 class="text-center observer-title">Kali Putih (Jurangrejo)</h4>
+<img id=observer-content-22 src="http://merapi.bgl.esdm.go.id/viewer_images/view.php?id=100" alt width=100%>
+</div>
+<div class=col-md-4>
+<h4 class="text-center observer-title">Kali Putih (Srumbung)</h4>
+<img id=observer-content-23 src="http://merapi.bgl.esdm.go.id/viewer_images/view.php?id=76" alt width=100%>
+</div>
+<div class=col-md-4>
+<h4 class="text-center observer-title">Kali Senowo (SABO)</h4>
+<img id=observer-content-24 src="http://merapi.bgl.esdm.go.id/viewer_images/view.php?id=112" alt width=100%>
+</div>
+</div>
+</main>
+<footer class=footer>
+<div class=container>
+<span class=text-muted>Made with love by <a target=_blank href=https://www.linkedin.com/in/muhammadmuhlas/>Muhammad Muhlas</a> at Yogyakarta</span>
+</div>
+</footer>
+<script src=https://code.jquery.com/jquery-3.3.1.slim.min.js integrity=sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo crossorigin=anonymous></script>
+<script>window.jQuery||document.write('<script src="assets/js/vendor/jquery-slim.min.js"><\/script>');</script>
+<script src=assets/js/vendor/popper.min.js></script>
+<script src=dist/js/bootstrap.min.js></script>
+<script src=https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js></script>
+<script src=uri.js></script>
+<script src=main.js></script>
+</body>
+</html>
